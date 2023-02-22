@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1010074987218",
+    "project_id": "myprojectname-57dbb",
+    "storage_bucket": "myprojectname-57dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010074987218:android:0a05d07b261b109e61db0b",
+        "android_client_info": {
+          "package_name": "com.loxy01.firebasechatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010074987218-cd7372ls29tk6pp26p9o2t6a0io9egeq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loxy01.firebasechatapp",
+            "certificate_hash": "67fcb2e755c6fbe519da9775a7c0c3e4360e3dbe"
+          }
+        },
+        {
+          "client_id": "1010074987218-8jtm2qi8vahg8vu2btp2jc0erutcg5av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCHj3h89JWoHj012xUeKZpjBEb-KkecWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010074987218-8jtm2qi8vahg8vu2btp2jc0erutcg5av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

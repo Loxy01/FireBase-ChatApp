@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.signInActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="341.42dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/chatlogo_highquality" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In!"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="334dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_gravity="center"
+        android:text="E-mail"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:enabled="false"
+        android:onClick="hyperlink_ForgotPassword"
+        android:background="@drawable/white_rectangle"/>
+
+    <EditText
+        android:id="@+id/EmailEditTxt"
+        android:layout_width="334dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/svg_email_edit_text"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '@.0123456789"
+        android:drawableStart="@drawable/svg_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="334dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_gravity="center"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:enabled="false"
+        android:background="@drawable/white_rectangle"/>
+
+    <EditText
+        android:id="@+id/PasswordEditTxt"
+        android:layout_width="334dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/svg_email_edit_text"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '@.0123456789"
+        android:drawableStart="@drawable/svg_password_hint"
+        android:inputType="textEmailAddress" />
+    
+    <EditText
+        android:id="@+id/ForgotPassword"
+        android:layout_width="334dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="Forgot Password?"
+        android:focusable="false"
+        android:textColor="@color/hyperlink_color"
+        android:gravity="end|center_vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/white_rectangle"/>
+
+    <ImageButton
+        android:id="@+id/ContinueButton"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="38dp"
+        android:foreground="@drawable/continue_button" />
+
+</LinearLayout>
+
+</ScrollView>

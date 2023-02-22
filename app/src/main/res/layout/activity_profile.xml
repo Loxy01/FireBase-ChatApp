@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    tools:context=".userpackage.profileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/UserBackgroundImgProfile"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:maxHeight="200dp"
+            android:src="@drawable/svg_background_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitCenter"
+            android:onClick="backgroundImgClick"
+            android:layout_marginTop="0dp"
+            android:scaleX="1.1"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/UserPhotoProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/svg_camera_account_icon"
+            android:onClick="accountPhotoClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/UserBackgroundImgProfile"
+            tools:ignore="MissingClass,MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/UserNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/name"
+        android:textAppearance="@style/name" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="15dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:maxLength="200"
+            android:onClick="hyperlinkToGitHub"
+            android:text="@string/description"
+            android:textColorLink="@color/link" />
+    </RelativeLayout>
+
+</LinearLayout>

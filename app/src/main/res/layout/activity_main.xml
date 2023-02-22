@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ChatActivity"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/messageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/editTx_and_sendTx"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="@id/editTx_and_sendTx"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:smoothScrollbar="true"
+        tools:listitem="@layout/your_message_item" />
+
+    <LinearLayout
+        android:id="@+id/editTx_and_sendTx"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/sendPhotoImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:maxHeight="50dp"
+            android:background="@drawable/ic_add_photo" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="400dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/sendButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dp"
+            android:layout_weight="3"
+            android:text="Send"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:enabled="false"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_Download"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
