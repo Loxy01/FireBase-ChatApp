@@ -6,6 +6,7 @@ How to get started:
 You should visit these sites ↓
 
 https://firebase.google.com/
+
 https://developers.google.com/android/guides/client-auth
 
 Link to download the application: https://www.mediafire.com/file/lzjbp8skw7yccs7/FireBase+ChatApp.apk/file
